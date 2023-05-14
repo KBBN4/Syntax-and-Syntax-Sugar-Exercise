@@ -12,34 +12,34 @@
 
             if (answer < 9)
             {
-                response = answer + " is less than nine";
+                response = $"{answer}   is less than nine";
             }
             else
             {
-                response = answer + "is greater than or equal to nine";
+                response = $"{answer}  is greater than or equal to nine";
             }
 
             Console.WriteLine(response);
 
-            /*
-            // string interpolation
+
+            string interpolation
 
 
-            Console.WriteLine($" Hi , your {answer} is less than my {response}. Try again.");
-
-            // ternary operator
 
 
-            var message = (response < answer) ? " your answer is less than mine" : "try again";
-            Console.WriteLine(message);
-            */
+            response = (answer < 9) ? $"{answer} is less than nine " : $"{answer}  is greater than or equal to nine";
+            Console.WriteLine(response);
+
+
+
+
 
 
         }
-         
 
-           
-       
+
+
+
 
     }
 }
